@@ -9,21 +9,30 @@
 /* Begin PBXBuildFile section */
 		00F2F1082886ED89008C0710 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F2F1072886ED89008C0710 /* AppDelegate.swift */; };
 		00F2F10A2886ED89008C0710 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F2F1092886ED89008C0710 /* SceneDelegate.swift */; };
-		00F2F10C2886ED89008C0710 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F2F10B2886ED89008C0710 /* ViewController.swift */; };
 		00F2F10F2886ED89008C0710 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00F2F10D2886ED89008C0710 /* Main.storyboard */; };
 		00F2F1112886ED8B008C0710 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00F2F1102886ED8B008C0710 /* Assets.xcassets */; };
 		00F2F1142886ED8B008C0710 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00F2F1122886ED8B008C0710 /* LaunchScreen.storyboard */; };
+		00F2F11C2886EE06008C0710 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F2F11B2886EE06008C0710 /* MainTableViewController.swift */; };
+		00F2F1222886F103008C0710 /* CollectionViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F2F1212886F103008C0710 /* CollectionViewTableViewCell.swift */; };
+		00F2F124288736DD008C0710 /* Albums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F2F123288736DD008C0710 /* Albums.swift */; };
+		00F2F1272887378F008C0710 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F2F1262887378F008C0710 /* NetworkManager.swift */; };
+		00F2F12928875AC0008C0710 /* AlbumsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F2F12828875AC0008C0710 /* AlbumsCollectionViewCell.swift */; };
+		00F2F12C28875BEC008C0710 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 00F2F12B28875BEC008C0710 /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		00F2F1042886ED89008C0710 /* MusicPlayers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicPlayers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00F2F1072886ED89008C0710 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00F2F1092886ED89008C0710 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		00F2F10B2886ED89008C0710 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		00F2F10E2886ED89008C0710 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		00F2F1102886ED8B008C0710 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00F2F1132886ED8B008C0710 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00F2F1152886ED8B008C0710 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00F2F11B2886EE06008C0710 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		00F2F1212886F103008C0710 /* CollectionViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewTableViewCell.swift; sourceTree = "<group>"; };
+		00F2F123288736DD008C0710 /* Albums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Albums.swift; sourceTree = "<group>"; };
+		00F2F1262887378F008C0710 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		00F2F12828875AC0008C0710 /* AlbumsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00F2F12C28875BEC008C0710 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +66,59 @@
 		00F2F1062886ED89008C0710 /* MusicPlayers */ = {
 			isa = PBXGroup;
 			children = (
+				00F2F1252887377D008C0710 /* Network */,
+				00F2F1202886F088008C0710 /* Controllers */,
+				00F2F11F2886F067008C0710 /* ViewModels */,
+				00F2F11E2886F060008C0710 /* Views */,
+				00F2F11D2886F05B008C0710 /* Models */,
 				00F2F1072886ED89008C0710 /* AppDelegate.swift */,
 				00F2F1092886ED89008C0710 /* SceneDelegate.swift */,
-				00F2F10B2886ED89008C0710 /* ViewController.swift */,
-				00F2F10D2886ED89008C0710 /* Main.storyboard */,
 				00F2F1102886ED8B008C0710 /* Assets.xcassets */,
-				00F2F1122886ED8B008C0710 /* LaunchScreen.storyboard */,
 				00F2F1152886ED8B008C0710 /* Info.plist */,
 			);
 			path = MusicPlayers;
+			sourceTree = "<group>";
+		};
+		00F2F11D2886F05B008C0710 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				00F2F123288736DD008C0710 /* Albums.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		00F2F11E2886F060008C0710 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				00F2F1212886F103008C0710 /* CollectionViewTableViewCell.swift */,
+				00F2F10D2886ED89008C0710 /* Main.storyboard */,
+				00F2F1122886ED8B008C0710 /* LaunchScreen.storyboard */,
+				00F2F12828875AC0008C0710 /* AlbumsCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		00F2F11F2886F067008C0710 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		00F2F1202886F088008C0710 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				00F2F11B2886EE06008C0710 /* MainTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		00F2F1252887377D008C0710 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				00F2F1262887378F008C0710 /* NetworkManager.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +137,9 @@
 			dependencies = (
 			);
 			name = MusicPlayers;
+			packageProductDependencies = (
+				00F2F12B28875BEC008C0710 /* Kingfisher */,
+			);
 			productName = MusicPlayers;
 			productReference = 00F2F1042886ED89008C0710 /* MusicPlayers.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +168,9 @@
 				Base,
 			);
 			mainGroup = 00F2F0FB2886ED89008C0710;
+			packageReferences = (
+				00F2F12A28875BEC008C0710 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 00F2F1052886ED89008C0710 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,9 +198,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00F2F10C2886ED89008C0710 /* ViewController.swift in Sources */,
+				00F2F1272887378F008C0710 /* NetworkManager.swift in Sources */,
+				00F2F124288736DD008C0710 /* Albums.swift in Sources */,
 				00F2F1082886ED89008C0710 /* AppDelegate.swift in Sources */,
+				00F2F11C2886EE06008C0710 /* MainTableViewController.swift in Sources */,
+				00F2F1222886F103008C0710 /* CollectionViewTableViewCell.swift in Sources */,
 				00F2F10A2886ED89008C0710 /* SceneDelegate.swift in Sources */,
+				00F2F12928875AC0008C0710 /* AlbumsCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +357,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -321,6 +386,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -358,6 +424,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		00F2F12A28875BEC008C0710 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		00F2F12B28875BEC008C0710 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 00F2F12A28875BEC008C0710 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 00F2F0FC2886ED89008C0710 /* Project object */;
 }
